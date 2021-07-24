@@ -1,12 +1,20 @@
 @font-face { font-family: Whitney; src: url('whitneylight.otf'); }
 
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
 body {
     font-family: Whitney, sans-serif;
     color: white;
-    background-color: #2c2f33
+    background-color: #2c2f33;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
-.content {
-    max-width: 500px;
-    margin: auto;
-}
