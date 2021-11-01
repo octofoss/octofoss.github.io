@@ -1,60 +1,63 @@
 <!DOCTYPE html>
+
 <html>
-<title>Dreeper Report</title>
-<meta content="octoisntbritish" property="og:title" />
-<meta content="professional procrastinator" property="og:description" />
-<meta content="https://octoisntbritish.github.io" property="og:url" />
-<meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+	<title>Dreeper Report</title>
+	<meta content="octoisntbritish" property="og:title" />
+	<meta content="professional procrastinator" property="og:description" />
+	<meta content="https://octoisntbritish.github.io/dreeper_report.html" property="og:url" />
+	<meta content="#ffffff" data-react-helmet="true" name="theme-color" />
 
-<body>
-	<link rel="stylesheet" href="styles.css">
-	<h1 id="a-detailed-report-on-the-dreeper-origin">A detailed report on the Dreeper Origin</h1>
-	<p>TLDR; I can&#39;t accept this Origin into the server yet. Read below for reasons.</p>
-	<ul>
-		<li><code>pack.mcmeta</code> is incomplete. A description is not provided.
-			<ul>
-				<li>Line 4: <code>&quot;description&quot;: &quot;Your Description Here!&quot;</code> It is highly recommended to add a description to datapacks, despite them not normally showing up in a server menu.</li>
-			</ul>
-		</li>
-		<li>Some abilities have issues, whether those be technical or other reasons.
-			<ul>
-				<li>3 abilities do not have a clear reason for their presence (<code>origins:slow_falling</code>, <code>drep:speedy</code>, <code>drep:small_boy</code>)</li>
-				<li>3 abilities have technical issues
-					<ul>
-						<li>1 is hidden from the ability list (<code>drep:lush_colour</code>)</li>
-						<li>1 has a file typo (<code>origin:no_shield</code>)</li>
-						<li>1 has multiplier issues (<code>drep:explosive</code>)</li>
-					</ul>
-				</li>
-			</ul>
-		</li>
-		<li>No malcious code was found within the datapack.</li>
-	</ul>
-	<h2 id="abilities">Abilities</h2>
-	<h4 id="you-can-click-on-a-file-location-to-jump-to-that-file-s-github-page-genesis-does-not-have-a-github-page-">You can click on a file location to jump to that file&#39;s GitHub page. Genesis does not have a GitHub page.</h4>
-	<h4 id="-flight-permanent-elytra-drep-flight-source-unknown">+ Flight (Permanent Elytra) <code>drep:flight</code> Source: Unknown</h4>
-	<p>This ability is fine how it is.</p>
-	<h4 id="-flap-your-wings-flight-launch-drep-launch-source-genesis-data-genesis-powers-dragonkin-launch-json-">+ Flap your wings (Flight Launch) <code>drep:launch</code> Source: Genesis (<code>\data\genesis\powers\dragonkin\launch.json</code>)</h4>
-	<p>This ability is fine how it is.</p>
-	<h4 id="-one-of-us-creeper-immunity-drep-creeper_tolerance-source-unknown">+ One of Us (Creeper Immunity) <code>drep:creeper_tolerance</code> Source: Unknown</h4>
-	<p>This ability is fine how it is.</p>
-	<p>####+ Small Explosion <code>drep:mini_explosion</code> Source: Unknown This ability is fine how it is.</p>
-	<h4 id="-featherweight-origins-slow_falling-source-origins-src-main-resources-data-origins-powers-slow_falling-json-https-github-com-apace100-origins-fabric-blob-1-17-src-main-resources-data-origins-powers-slow_falling-json-src-main-resources-data-origins-powers-slow_falling-json-">+ Featherweight <code>origins:slow_falling</code> Source: Origins <a href="https://github.com/apace100/origins-fabric/blob/1.17/src/main/resources/data/origins/powers/slow_falling.json" title="(`/src/main/resources/data/origins/powers/slow_falling.json`)">(<code>/src/main/resources/data/origins/powers/slow_falling.json</code>)</a></h4>
-	<p>This ability is coded fine, but <strong>I do not know the reason for slow falling.</strong></p>
-	<h4 id="-speedy-permanent-speed-i-drep-speedy-source-original">+ Speedy (Permanent Speed I) <code>drep:speedy</code> Source: Original</h4>
-	<p>This ability is coded fine, <strong>but I do not know the reason for permanent speed.</strong></p>
-	<h4 id="-small-boi-reduced-height-drep-small_boy-source-octo-but-i-do-not-care">= Small Boi (Reduced Height) <code>drep:small_boy</code> Source: Octo, but I do not care</h4>
-	<p>This ability is coded fine, though <strong>I do not know the reason for the height being reduced.</strong> Creepers are about the same height as a player model.</p>
-	<h4 id="-null-ambient-gunpowder-particles-drep-gunpowder_particles-source-original-">= null (Ambient Gunpowder Particles) <code>drep:gunpowder_particles</code> Source: Original?</h4>
-	<p>This ability is fine how it is.</p>
-	<h4 id="-suck-it-green-boi-skin-color-change-drep-lush_colour-source-original-">= Suck it Green Boi (Skin Color Change) <code>drep:lush_colour</code> Source: Original?</h4>
-	<p>Within this file, the <code>&quot;hidden&quot;</code> value is set to <code>true</code>. Despite this having a name and description, the <code>&quot;hidden&quot;</code> value hides it from the Origin ability list in-game. It is recommended that you set this to <code>false</code>, or remove line 3 entirely. I must note that if you want the exact colors from our current Creeper origin, you need 0.7 red instead of 0.6 red.</p>
-	<h4 id="-deathly-allergic-damage-near-cats-drep-deathly_allergy-source-originsplus-src-main-resources-data-originsplus-powers-scared_of_cats-json-https-github-com-lochnessdragon-originsplus-blob-master-src-main-resources-data-originsplus-powers-scared_of_cats-json-src-main-resources-data-originsplus-powers-scared_of_cats-json-">- Deathly Allergic (Damage Near Cats) <code>drep:deathly_allergy</code>  Source: OriginsPlus <a href="https://github.com/lochnessdragon/OriginsPlus/blob/master/src/main/resources/data/originsplus/powers/scared_of_cats.json" title="(`/src/main/resources/data/originsplus/powers/scared_of_cats.json`)">(<code>/src/main/resources/data/originsplus/powers/scared_of_cats.json</code>)</a></h4>
-	<p>This ability is fine how it is. I would recommend changing the description to say how much damage is dealt in each interval, though it is not necessary to getting the Origin accepted.</p>
-	<h4 id="-explosive-fire-vulnerability-drep-explosive-source-originsplus-src-main-resources-data-originsplus-powers-flammable-json-https-github-com-lochnessdragon-originsplus-blob-master-src-main-resources-data-originsplus-powers-flammable-json-src-main-resources-data-originsplus-powers-flammable-json-">- Explosive (Fire Vulnerability) <code>drep:explosive</code> Source: OriginsPlus <a href="https://github.com/lochnessdragon/OriginsPlus/blob/master/src/main/resources/data/originsplus/powers/flammable.json" title="(`/src/main/resources/data/originsplus/powers/flammable.json`)">(<code>/src/main/resources/data/originsplus/powers/flammable.json</code>)</a></h4>
-	<p>The &quot;Explosive&quot; ability causes the player to take more damage while in fire. Despite this being the intended purpose, <em>the value by which the damage is multiplied is set to 1. </em>This means that there is no damage being multiplied, making the drawback ineffective. You must set this to a higher value in order to get your origin approved.</p>
-	<h4 id="-unwieldy-shield-inability-origin-no_shield-source-origins-src-main-resources-data-origins-powers-no_shield-json-https-github-com-apace100-origins-fabric-blob-1-17-src-main-resources-data-origins-powers-no_shield-json-src-main-resources-data-origins-powers-no_shield-json-">- Unwieldy (Shield Inability) <code>origin:no_shield</code> Source: Origins <a href="https://github.com/apace100/origins-fabric/blob/1.17/src/main/resources/data/origins/powers/no_shield.json" title="(`/src/main/resources/data/origins/powers/no_shield.json`)">(<code>/src/main/resources/data/origins/powers/no_shield.json</code>)</a></h4>
-	<p>The file reference for this ability is not valid. The correct file would be <code>origins:no_shield</code>.</p>
-</body>
+	<body>
+		<link rel="stylesheet" href="styles.css">
+		<h1>A detailed report on the Dreeper Origin</h1>
+			<p>TLDR; I can&#39;t accept this Origin into the server yet. Read below for reasons.</p>
 
+		<ul>
+			<li><code>pack.mcmeta</code> is incomplete. A description is not provided.
+				<ul>
+					<li>Line 4: <code>&quot;description&quot;: &quot;Your Description Here!&quot;</code> It is highly recommended to add a description to datapacks, despite them not normally showing up in a server menu.</li>
+				</ul>
+			</li>
+			<li>Some abilities have issues, whether those be technical or other reasons.
+				<ul>
+					<li>3 abilities do not have a clear reason for their presence (<code>origins:slow_falling</code>, <code>drep:speedy</code>, <code>drep:small_boy</code>)</li>
+					<li>3 abilities have technical issues
+						<ul>
+							<li>1 is hidden from the ability list (<code>drep:lush_colour</code>)</li>
+							<li>1 has a file typo (<code>origin:no_shield</code>)</li>
+							<li>1 has multiplier issues (<code>drep:explosive</code>)</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>No malcious code was found within the datapack.</li>
+		</ul>
+
+	<h2>Abilities</h2>
+		<h4>You can click on a file location to jump to that file&#39;s GitHub page. Genesis does not have a GitHub page.</h4>
+		<h4>+ Flight (Permanent Elytra) <code>drep:flight</code> Source: Unknown</h4>
+			<p>This ability is fine how it is.</p>
+		<h4>+ Flap your wings (Flight Launch) <code>drep:launch</code> Source: Genesis (<code>\data\genesis\powers\dragonkin\launch.json</code>)</h4>
+			<p>This ability is fine how it is.</p>
+		<h4>+ One of Us (Creeper Immunity) <code>drep:creeper_tolerance</code> Source: Unknown</h4>
+			<p>This ability is fine how it is.</p>
+		<h4>####+ Small Explosion <code>drep:mini_explosion</code> Source: Unknown<h4></h4> 
+			<p>This ability is fine how it is.</p>
+		<h4>+ Featherweight <code>origins:slow_falling</code> Source: Origins <a href="https://github.com/apace100/origins-fabric/blob/1.17/src/main/resources/data/origins/powers/slow_falling.json" title="(`/src/main/resources/data/origins/powers/slow_falling.json`)">(<code>/src/main/resources/data/origins/powers/slow_falling.json</code>)</a></h4>
+			<p>This ability is coded fine, but <strong>I do not know the reason for slow falling.</strong></p>
+		<h4>+ Speedy (Permanent Speed I) <code>drep:speedy</code> Source: Original</h4>
+			<p>This ability is coded fine, <strong>but I do not know the reason for permanent speed.</strong></p>
+		<h4>= Small Boi (Reduced Height) <code>drep:small_boy</code> Source: Octo, but I do not care</h4>
+			<p>This ability is coded fine, though <strong>I do not know the reason for the height being reduced.</strong> Creepers are about the same height as a player model.</p>
+		<h4>= null (Ambient Gunpowder Particles) <code>drep:gunpowder_particles</code> Source: Original?</h4>
+			<p>This ability is fine how it is.</p>
+		<h4>= Suck it Green Boi (Skin Color Change) <code>drep:lush_colour</code> Source: Original?</h4>
+			<p>Within this file, the <code>&quot;hidden&quot;</code> value is set to <code>true</code>. Despite this having a name and description, the <code>&quot;hidden&quot;</code> value hides it from the Origin ability list in-game. It is recommended that you set this to <code>false</code>, or remove line 3 entirely. I must note that if you want the exact colors from our current Creeper origin, you need 0.7 red instead of 0.6 red.</p>
+		<h4>- Deathly Allergic (Damage Near Cats) <code>drep:deathly_allergy</code>  Source: OriginsPlus <a href="https://github.com/lochnessdragon/OriginsPlus/blob/master/src/main/resources/data/originsplus/powers/scared_of_cats.json" title="(`/src/main/resources/data/originsplus/powers/scared_of_cats.json`)">(<code>/src/main/resources/data/originsplus/powers/scared_of_cats.json</code>)</a></h4>
+			<p>This ability is fine how it is. I would recommend changing the description to say how much damage is dealt in each interval, though it is not necessary to getting the Origin accepted.</p>
+		<h4>- Explosive (Fire Vulnerability) <code>drep:explosive</code> Source: OriginsPlus <a href="https://github.com/lochnessdragon/OriginsPlus/blob/master/src/main/resources/data/originsplus/powers/flammable.json" title="(`/src/main/resources/data/originsplus/powers/flammable.json`)">(<code>/src/main/resources/data/originsplus/powers/flammable.json</code>)</a></h4>
+			<p>The &quot;Explosive&quot; ability causes the player to take more damage while in fire. Despite this being the intended purpose, <em>the value by which the damage is multiplied is set to 1. </em>This means that there is no damage being multiplied, making the drawback ineffective. You must set this to a higher value in order to get your origin approved.</p>
+		<h4>- Unwieldy (Shield Inability) <code>origin:no_shield</code> Source: Origins <a href="https://github.com/apace100/origins-fabric/blob/1.17/src/main/resources/data/origins/powers/no_shield.json" title="(`/src/main/resources/data/origins/powers/no_shield.json`)">(<code>/src/main/resources/data/origins/powers/no_shield.json</code>)</a></h4>
+			<p>The file reference for this ability is not valid. The correct file would be <code>origins:no_shield</code>.</p>
+	</body>
 </html>
