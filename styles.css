@@ -19,3 +19,54 @@ body {
     overflow: hidden;
 }
 
+.quote {
+    margin: 0;
+    background: #1b1e22;
+    padding: 1em;
+    border-radius: 1em;
+  }
+
+/* plain fade */
+
+#longpong {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* the plomp in */
+
+.animate.pop {
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+#clank q {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: animate-pop 2s;
+}
+
