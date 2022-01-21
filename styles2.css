@@ -1,8 +1,5 @@
 @font-face { font-family: Whitney; src: url('whitneylight.otf'); }
 
-html, body {
-    height: 100%;
-}
 
 body {
     font-family: Whitney, sans-serif;
